@@ -39,25 +39,59 @@ public class Main {
         float totalWeightIceCreame = weightIceCreame * countIceCreame;
         float totalWeightEggs = weightEgg * countEgg;
 
+        int grPerKg = 1000;
         float totalWeightProductsGram = totalWeightBananas + totalWeightMilk + totalWeightIceCreame + totalWeightEggs;
-        float totalWeightProductsKilogram = totalWeightProductsGram / 1000;
+        float totalWeightProductsKilogram = totalWeightProductsGram / grPerKg;
         System.out.println("Task 3. Вес спорт-завтрака " + totalWeightProductsKilogram + " кг");
         System.out.println();
 
         // Task 4
         float needToLoseKg = 7f;
-        float needToLoseGr = needToLoseKg * 1000;
+        float needToLoseGr = needToLoseKg * grPerKg;
         float minLosePerDayGr = 250f;
         float maxLosePerDayGr = 500f;
-        float maxTerm = needToLoseGr / minLosePerDayGr;
+        int maxTerm = (int) Math.ceil(needToLoseGr / minLosePerDayGr);
         System.out.println("Task 4. Максимальный срок похудения " + maxTerm + " дней");
-        float minTerm = needToLoseGr / maxLosePerDayGr;
+        int minTerm = (int) Math.ceil(needToLoseGr / maxLosePerDayGr);
         System.out.println("Task 4. Минимальный срок похудения " + minTerm + " дней");
-        float avgTerm = (maxTerm + minTerm) / 2;
+        int avgTerm = (int) Math.ceil((maxTerm + minTerm) / 2.0);
         System.out.println("Task 4. Средний срок похудения " + avgTerm + " дней");
         System.out.println();
 
         // Task 5
+        float coefficent = 1.1f;
+        int monthCount = 12;
+
+        float mashaCurrentSalary = 67760f;
+        float mashaCurrentYearIncome = mashaCurrentSalary * monthCount;
+        float mashaNewSalary = mashaCurrentSalary * coefficent;
+        float mashaNewYearIncome = mashaNewSalary * monthCount;
+        float mashaYearIncomeDifference = mashaNewYearIncome - mashaCurrentYearIncome;
+        System.out.println("Task 5. Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaYearIncomeDifference + " рублей");
+
+        float denisCurrentSalary = 83690f;
+        float denisCurrentYearIncome = denisCurrentSalary * monthCount;
+        float denisNewSalary = denisCurrentSalary * coefficent;
+        float denisNewYearIncome = denisNewSalary * monthCount;
+        float denisYearIncomeDifference = denisNewYearIncome - denisCurrentYearIncome;
+        System.out.println("Task 5. Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisYearIncomeDifference + " рублей");
+
+        float kristinaCurrentSalary = 76230f;
+        float kristinaCurrentYearIncome = kristinaCurrentSalary * monthCount;
+        float kristinaNewSalary = kristinaCurrentSalary * coefficent;
+        float kristinaNewYearIncome = kristinaNewSalary * monthCount;
+        float kristinaYearIncomeDifference = kristinaNewYearIncome - kristinaCurrentYearIncome;
+        System.out.println("Task 5. Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaYearIncomeDifference + " рублей");
+
+
+
+
+
+
+
+
+
+
 
 
 
