@@ -8,6 +8,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -102,5 +105,40 @@ public class Main {
         float kristinaNewYearIncome = kristinaNewSalary * monthCount;
         float kristinaYearIncomeDifference = kristinaNewYearIncome - kristinaCurrentYearIncome;
         System.out.println("Task 5. Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaYearIncomeDifference + " рублей");
+        System.out.println();
+    }
+
+    public static void task6() {
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+
+        int result = a * (b + (c - d * e));
+        int resultInvert = -result;
+
+        System.out.println("Task6*. " + resultInvert);
+        System.out.println();
+    }
+
+    public static void task7() {
+        int a = 5;
+        int b = 7;
+
+        b = b - a;
+        a = a + b;
+        b = a - b;
+
+        System.out.println("Task 7*. a = " + a + ", b = " + b);
+        System.out.println();
+    }
+
+    public static void task8() {
+        int a = 256;
+        int b = (a / 10) % 10;
+
+        System.out.println("Task 8*. a = " + a + ", b = " + b);
+        System.out.println();
     }
 }
